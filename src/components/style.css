@@ -1,0 +1,97 @@
+.header {
+padding: 40px;
+height: 150px;
+background-image: url('/public/img/backgroung_picture.jpg');
+}
+
+.header h1 {
+    color:coral;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.textCongratulation {
+    color:aliceblue;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.card-wrapper, .modal-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 500px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+.delete {
+    border: 1px solid blue;
+    border-radius: 5px;
+    color: coral;
+    background-color: aliceblue;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: lighter;
+    padding: 5px;
+    margin: 10px;
+}
+
+.title {
+    font-size: 18px;
+    color: coral;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.message {
+    font-size: 16px;
+    color: blue;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.url {
+    font-size: 15px;
+    color: coral;
+    text-align: center;
+
+}
+
+.modal {
+    width: 300px;
+    height: auto;
+    border: 1px solid blue;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+.title-input, .message-input, .url-input {
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: lighter;
+    padding: 5px;
+    margin: 10px;
+}
+
+.modal button {
+    border: 1px solid blue;
+    border-radius: 5px;
+    color: coral;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: lighter;
+    padding: 5px;
+    margin: 10px;
+}

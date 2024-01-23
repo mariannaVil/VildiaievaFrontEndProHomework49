@@ -1,0 +1,21 @@
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.buttons button {
+    border: 1px solid blue;
+    border-radius: 5px;
+    color: coral;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: lighter;
+    padding: 5px;
+}
+
+.main-field {
+   display: none;
+}
