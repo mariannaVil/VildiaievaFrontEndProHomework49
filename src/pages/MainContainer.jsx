@@ -1,10 +1,11 @@
-import React from 'react';
+import { Component } from 'react';
 import './styles.css';
 import Card from '../components/Card';
-import { creativeCards } from '../api';
 
-const MainContainer = ({ cards , handleGenerateClick, handleCreateClick, handleDeleteClick }) => {
- 
+export default class MainContainer extends Component {
+  render() {
+    const { cards, handleGenerateClick, handleCreateClick, handleDeleteClick } = this.props;
+
     return (
       <div className='main-wrapper'>
         <div className='buttons'>
@@ -13,17 +14,17 @@ const MainContainer = ({ cards , handleGenerateClick, handleCreateClick, handleD
         </div>
         <div className='main-field'>
           {Array.isArray(cards) && cards.map((card) => (
-      <Card
-        id={card.id}
-        title={card.title}
-        message={card.message}
-        imgURL={card.imgURL}
-        handleDeleteClick={() => handleDeleteClick(card.id)}
-      />
-    ))}
+            <Card
+              key={card.id}
+              id={card.id}
+              title={card.title}
+              message={card.message}
+              imgURL={card.imgURL}
+              handleDeleteClick={() => handleDeleteClick(card.id)}
+            />
+          ))}
         </div>
       </div>
     );
-  }  
-
-export default MainContainer;
+  }
+}
